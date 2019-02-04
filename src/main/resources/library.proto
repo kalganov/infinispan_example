@@ -1,0 +1,12 @@
+package books;
+
+message Book {
+    required string title = 1;
+    required string description = 2;
+    repeated Author authors = 3;
+}
+
+message Author {
+    required string name = 1;
+    required string surname = 2;
+}
